@@ -11,8 +11,7 @@ FormItem,
 FormLabel,
 FormMessage,
 } from "@/components/ui/form"
-import { useState } from "react"
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { useUser } from "@clerk/nextjs"

@@ -3,8 +3,8 @@ import 'dotenv/config'; // Force-load .env.local
 
 const nextConfig = {
   experimental: {
-    turbo: false, // Disable Turbopack
-  },
+    turbo: {}
+  },  
   reactStrictMode: true,
   env: {
     CLERK_SECRET_KEY: process.env.CLERK_SECRET_KEY, // Pass it explicitly

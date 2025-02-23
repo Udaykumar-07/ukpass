@@ -5,14 +5,13 @@ import { z } from "zod";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { useState } from "react";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { addCardServer } from "@/actions/actions";
@@ -52,7 +51,7 @@ export function AddCard() {
     },
   });
 
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading] = useState(false);
 
  
   async function onSubmit(values: z.infer<typeof formSchema>) {

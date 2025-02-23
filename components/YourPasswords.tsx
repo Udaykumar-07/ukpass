@@ -21,7 +21,7 @@ export function YourPasswords({passwords}:{passwords:Password[]}) {
   return (
     <div className="space-y-4 h-full">
       {passwords.length<=0 && <span className="text-muted-foreground">No passwords added</span>}
-      {passwords.map((passwords:Password,index,id) => (
+      {passwords.map((passwords:Password,index) => (
         <Card key={index} className="w-full">
           <CardHeader>
             <CardTitle><Link href={passwords.website} target="_blank" className="text-blue-700 underline">{passwords.website}</Link></CardTitle>
